@@ -1,0 +1,85 @@
+2025-03-13 13:55:33 - INFO - Estableciendo los selectores
+2025-03-13 13:55:33 - INFO - Enviando cabeceras al sitio web
+2025-03-13 13:55:33 - DEBUG - Using selector: EpollSelector
+2025-03-13 13:55:35 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 13:55:38 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 13:55:38 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 13:55:39 - INFO - Inicio de extracción de elementos
+2025-03-13 13:55:39 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 13:55:40 - INFO - Transformando datos a puntos flotantes
+2025-03-13 13:55:40 - INFO - Eliminando simbolos especiales
+2025-03-13 13:55:40 - INFO - Creando archivo CSV
+2025-03-13 13:55:40 - INFO - Fin de ejecución del script
+2025-03-13 13:55:40 - INFO - ================================
+2025-03-13 14:02:31 - INFO - Estableciendo los selectores
+2025-03-13 14:02:31 - INFO - Enviando cabeceras al sitio web
+2025-03-13 14:02:31 - DEBUG - Using selector: EpollSelector
+2025-03-13 14:02:40 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 14:02:43 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 14:02:43 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 14:02:43 - INFO - Inicio de extracción de elementos
+2025-03-13 14:02:43 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 14:02:44 - INFO - Transformando datos a puntos flotantes
+2025-03-13 14:02:44 - INFO - Eliminando simbolos especiales
+2025-03-13 14:02:44 - INFO - Creando archivo CSV
+2025-03-13 14:02:44 - INFO - Fin de ejecución del script
+2025-03-13 14:02:44 - INFO - ================================
+2025-03-13 14:07:58 - INFO - Estableciendo los selectores
+2025-03-13 14:07:58 - INFO - Enviando cabeceras al sitio web
+2025-03-13 14:07:58 - DEBUG - Using selector: EpollSelector
+2025-03-13 14:08:00 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 14:08:07 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 14:08:07 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 14:08:07 - INFO - Inicio de extracción de elementos
+2025-03-13 14:08:07 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 14:08:08 - INFO - Transformando datos a puntos flotantes
+2025-03-13 14:08:08 - INFO - Eliminando simbolos especiales
+2025-03-13 14:08:08 - INFO - Creando archivo CSV
+2025-03-13 14:08:08 - INFO - Fin de ejecución del script
+2025-03-13 14:08:08 - INFO - ================================
+2025-03-13 14:12:27 - INFO - Estableciendo los selectores
+2025-03-13 14:12:27 - INFO - Enviando cabeceras al sitio web
+2025-03-13 14:12:27 - DEBUG - Using selector: EpollSelector
+2025-03-13 14:12:29 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 14:13:25 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 14:13:25 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 14:13:25 - INFO - Inicio de extracción de elementos
+2025-03-13 14:13:26 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 14:13:26 - INFO - Transformando datos a puntos flotantes
+2025-03-13 14:13:26 - INFO - Eliminando simbolos especiales
+2025-03-13 14:13:26 - INFO - Creando archivo CSV
+2025-03-13 14:13:26 - INFO - Fin de ejecución del script
+2025-03-13 14:13:26 - INFO - ================================
+2025-03-13 15:45:28 - INFO - Estableciendo los selectores
+2025-03-13 15:45:28 - INFO - Enviando cabeceras al sitio web
+2025-03-13 15:45:28 - DEBUG - Using selector: EpollSelector
+2025-03-13 15:45:30 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 15:45:32 - ERROR - Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+2025-03-14 08:52:51 - INFO - Estableciendo los selectores
+2025-03-14 08:52:51 - INFO - Enviando cabeceras al sitio web
+2025-03-14 08:52:51 - DEBUG - Using selector: EpollSelector
+2025-03-14 08:52:53 - INFO - Inicio de espera de carga de pagina web.
+2025-03-14 08:52:55 - INFO - Termino de espera de carga de pagina web.
+2025-03-14 08:52:55 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-14 08:52:56 - INFO - Inicio de extracción de elementos
+2025-03-14 08:52:56 - INFO - Obteniendo el texto de los elementos.
+2025-03-14 08:52:57 - INFO - Transformando datos a puntos flotantes
+2025-03-14 08:52:57 - INFO - Eliminando simbolos especiales
+2025-03-14 08:52:57 - INFO - Creando archivo CSV
+2025-03-14 08:52:57 - INFO - Fin de ejecución del script
+2025-03-14 08:52:57 - INFO - ================================
+2025-03-28 12:10:15 - INFO - Estableciendo los selectores
+2025-03-28 12:10:15 - INFO - Enviando cabeceras al sitio web
+2025-03-28 12:10:15 - DEBUG - Using selector: EpollSelector
+2025-03-28 12:10:18 - INFO - Inicio de espera de carga de pagina web.
+2025-03-28 12:10:21 - INFO - Termino de espera de carga de pagina web.
+2025-03-28 12:10:21 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-28 12:10:21 - INFO - Inicio de extracción de elementos
+2025-03-28 12:10:22 - INFO - Obteniendo el texto de los elementos.
+2025-03-28 12:10:23 - INFO - Transformando datos a puntos flotantes
+2025-03-28 12:10:23 - INFO - Eliminando simbolos especiales
+2025-03-28 12:10:23 - INFO - Creando archivo CSV
+2025-03-28 12:10:23 - INFO - Fin de ejecución del script
+2025-03-28 12:10:23 - INFO - ================================

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Sigma Tube & Bar</title>
+  <link rel="shortcut icon" href="/static/img/logo/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/static/img/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <!-- Header con navegación fija -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo/logo-sigma.png') }}" alt="Logo">
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio">Home</a></li>
+          <li><a href="#resumen">Summary</a></li>
+          <li><a href="#graficas">Graphs</a></li>
+        </ul>
+        <!-- <button class="pdf-btn">Descargar PDF</button> -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección: Inicio -->
+    <section id="inicio">
+      <div class="section-content">
+        <!-- Tabla generada a partir de csvSemanal.csv -->
+        <h2>Week ending: {{ Week_ending }}</h2>
+        <div class="table1 table-container">
+          {{ tabla_semanal | safe }}
+        </div>
+
+        <!-- Tabla generada a partir de csvMes.csv -->
+        <h2>Month ending: {{ Month_ending }}</h2>
+        <div class="table2 table-container">
+          {{ tabla_mensual | safe }}
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Resumen -->
+    <section id="resumen">
+      <div class="section-content">
+        <h2>Summary</h2>
+        <!-- Tabla generada a partir de csvSemanal.csv -->
+        <div class="table3 table-container">
+          {{ tabla2_semanal | safe }}
+        </div>
+
+        <!-- Tabla generada a partir de csvMes.csv -->
+        <div class="table4 table-container">
+          {{ tabla2_mensual | safe }}
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Gráficas -->
+    <section id="graficas">
+      <div class="section-content">
+        <h2>Oil Price (WTI)</h2>
+        <p>NYMEX</p>
+        <img src="{{ url_for('static', filename='img/01WTI.png') }}" alt="Oil Prime (WTI)">
+
+        <h2>Gas Price (Henry Hub)</h2>
+        <p>NYMEX</p>
+        <img src="{{ url_for('static', filename='img/02Natural.png') }}" alt="Gas Price (Henry Hub)">
+
+        <h2>Gasoline Prices</h2>
+        <p>Energy Information Administration</p>
+        <img src="{{ url_for('static', filename='img/03Gasoline.png') }}" alt="Gas Price (Henry Hub)">
+
+        <h2>Oil Services Index</h2>
+        <p>NASDAQ</p>
+        <img src="{{ url_for('static', filename='img/04OilServices.png') }}" alt="Gas Price (Henry Hub)">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Website developed by Bmateglobal.com</p>
+  </footer>
+</body>
+</html>

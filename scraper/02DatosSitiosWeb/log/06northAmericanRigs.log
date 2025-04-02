@@ -1,0 +1,103 @@
+2025-03-13 12:55:26 - INFO - Estableciendo los selectores
+2025-03-13 12:55:26 - INFO - Creación de carpeta csv
+2025-03-13 12:55:26 - INFO - Enviando cabeceras al sitio web
+2025-03-13 12:55:26 - DEBUG - Using selector: EpollSelector
+2025-03-13 12:55:34 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 12:55:36 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 12:55:36 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 12:55:37 - INFO - Inicio de extracción de elementos
+2025-03-13 12:55:37 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 12:55:38 - INFO - Transformando datos a puntos flotantes
+2025-03-13 12:55:38 - INFO - Eliminando simbolos especiales
+2025-03-13 12:55:38 - INFO - Eliminando simbolos especiales
+2025-03-13 12:55:38 - INFO - Creando archivo CSV
+2025-03-13 12:55:38 - INFO - Fin de ejecución del script
+2025-03-13 12:55:38 - INFO - ================================
+2025-03-13 13:55:15 - INFO - Estableciendo los selectores
+2025-03-13 13:55:15 - INFO - Enviando cabeceras al sitio web
+2025-03-13 13:55:15 - DEBUG - Using selector: EpollSelector
+2025-03-13 13:55:18 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 13:55:22 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 13:55:22 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 13:55:22 - INFO - Inicio de extracción de elementos
+2025-03-13 13:55:22 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 13:55:23 - INFO - Transformando datos a puntos flotantes
+2025-03-13 13:55:23 - INFO - Eliminando simbolos especiales
+2025-03-13 13:55:23 - INFO - Eliminando simbolos especiales
+2025-03-13 13:55:23 - INFO - Creando archivo CSV
+2025-03-13 13:55:23 - INFO - Fin de ejecución del script
+2025-03-13 13:55:23 - INFO - ================================
+2025-03-13 14:02:15 - INFO - Estableciendo los selectores
+2025-03-13 14:02:15 - INFO - Enviando cabeceras al sitio web
+2025-03-13 14:02:15 - DEBUG - Using selector: EpollSelector
+2025-03-13 14:02:18 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 14:02:21 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 14:02:21 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 14:02:21 - INFO - Inicio de extracción de elementos
+2025-03-13 14:02:21 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 14:02:23 - INFO - Transformando datos a puntos flotantes
+2025-03-13 14:02:23 - INFO - Eliminando simbolos especiales
+2025-03-13 14:02:23 - INFO - Eliminando simbolos especiales
+2025-03-13 14:02:23 - INFO - Creando archivo CSV
+2025-03-13 14:02:23 - INFO - Fin de ejecución del script
+2025-03-13 14:02:23 - INFO - ================================
+2025-03-13 14:07:34 - INFO - Estableciendo los selectores
+2025-03-13 14:07:34 - INFO - Enviando cabeceras al sitio web
+2025-03-13 14:07:34 - DEBUG - Using selector: EpollSelector
+2025-03-13 14:07:36 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 14:07:43 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 14:07:43 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 14:07:43 - INFO - Inicio de extracción de elementos
+2025-03-13 14:07:43 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 14:07:44 - INFO - Transformando datos a puntos flotantes
+2025-03-13 14:07:44 - INFO - Eliminando simbolos especiales
+2025-03-13 14:07:44 - INFO - Eliminando simbolos especiales
+2025-03-13 14:07:44 - INFO - Creando archivo CSV
+2025-03-13 14:07:44 - INFO - Fin de ejecución del script
+2025-03-13 14:07:44 - INFO - ================================
+2025-03-13 14:11:29 - INFO - Estableciendo los selectores
+2025-03-13 14:11:29 - INFO - Enviando cabeceras al sitio web
+2025-03-13 14:11:29 - DEBUG - Using selector: EpollSelector
+2025-03-13 14:11:31 - INFO - Inicio de espera de carga de pagina web.
+2025-03-13 14:12:00 - INFO - Termino de espera de carga de pagina web.
+2025-03-13 14:12:00 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-13 14:12:00 - INFO - Inicio de extracción de elementos
+2025-03-13 14:12:00 - INFO - Obteniendo el texto de los elementos.
+2025-03-13 14:12:01 - INFO - Transformando datos a puntos flotantes
+2025-03-13 14:12:01 - INFO - Eliminando simbolos especiales
+2025-03-13 14:12:01 - INFO - Eliminando simbolos especiales
+2025-03-13 14:12:01 - INFO - Creando archivo CSV
+2025-03-13 14:12:01 - INFO - Fin de ejecución del script
+2025-03-13 14:12:01 - INFO - ================================
+2025-03-13 15:43:47 - INFO - Estableciendo los selectores
+2025-03-13 15:43:47 - INFO - Enviando cabeceras al sitio web
+2025-03-13 15:43:47 - DEBUG - Using selector: EpollSelector
+2025-03-13 15:43:49 - INFO - Inicio de espera de carga de pagina web.
+2025-03-14 08:52:37 - INFO - Estableciendo los selectores
+2025-03-14 08:52:37 - INFO - Enviando cabeceras al sitio web
+2025-03-14 08:52:37 - DEBUG - Using selector: EpollSelector
+2025-03-14 08:52:43 - INFO - Inicio de espera de carga de pagina web.
+2025-03-14 08:52:44 - INFO - Termino de espera de carga de pagina web.
+2025-03-14 08:52:44 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-14 08:52:44 - INFO - Inicio de extracción de elementos
+2025-03-14 08:52:45 - INFO - Obteniendo el texto de los elementos.
+2025-03-14 08:52:46 - INFO - Transformando datos a puntos flotantes
+2025-03-14 08:52:46 - INFO - Eliminando simbolos especiales
+2025-03-14 08:52:46 - INFO - Eliminando simbolos especiales
+2025-03-14 08:52:46 - INFO - Creando archivo CSV
+2025-03-14 08:52:46 - INFO - Fin de ejecución del script
+2025-03-14 08:52:46 - INFO - ================================
+2025-03-28 12:09:40 - INFO - Estableciendo los selectores
+2025-03-28 12:09:40 - INFO - Enviando cabeceras al sitio web
+2025-03-28 12:09:40 - DEBUG - Using selector: EpollSelector
+2025-03-28 12:09:43 - INFO - Inicio de espera de carga de pagina web.
+2025-03-28 12:09:47 - INFO - Termino de espera de carga de pagina web.
+2025-03-28 12:09:47 - INFO - Iniciando la espera del primer selector, fecha
+2025-03-28 12:09:47 - INFO - Inicio de extracción de elementos
+2025-03-28 12:09:47 - INFO - Obteniendo el texto de los elementos.
+2025-03-28 12:09:49 - INFO - Transformando datos a puntos flotantes
+2025-03-28 12:09:49 - INFO - Eliminando simbolos especiales
+2025-03-28 12:09:49 - INFO - Eliminando simbolos especiales
+2025-03-28 12:09:49 - INFO - Creando archivo CSV
+2025-03-28 12:09:49 - INFO - Fin de ejecución del script
+2025-03-28 12:09:49 - INFO - ================================

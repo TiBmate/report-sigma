@@ -1,0 +1,193 @@
+/* Reset y estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Fondo gris claro para los laterales */
+  min-width: 1330px;
+}
+
+/* Header fijo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+}
+.logo img {
+  height: 50px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav ul li {
+  margin: 0 15px;
+}
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+.pdf-btn {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Layout principal usando CSS Grid */
+main {
+  display: grid;
+  grid-template-columns: 1fr 60% 1fr;
+  grid-gap: 20px;
+  padding-top: 80px; /* Espacio para el header fijo */
+  margin-bottom: 20px;
+}
+main > section {
+  grid-column: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Espaciado entre secciones */
+}
+
+/* Contenido interno de cada sección con Flexbox */
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilos para las tablas generales */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ccc;  /* Línea simple de color gris */
+  padding: 8px;
+  text-align: right;
+}
+
+.data-table th {
+  border-bottom: 3px solid #ccc;  /* Línea inferior gruesa en encabezados */
+  background-color: #f9f9f9;  /* Opcional: color de fondo para diferenciar */
+}
+
+#graficas img{
+  margin-left: 50px;
+  width: 1000px;
+  height: 550px;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+footer p{
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 1802px){
+  #graficas img{
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1728px){
+  #graficas img{
+    width: 900px;
+    height: 495px;
+  }
+}
+
+@media only screen and (max-width: 1560px){
+  #graficas img{
+    width: 765px;
+    height: 467.5px;
+  }
+}
+
+/* ================= Custom Table Styles ================= */
+/* Se aplican estilos especiales a las tablas contenidas en .table1, .table2, .table3 y .table4 */
+
+/* Eliminar bordes en celdas y en el contorno de la tabla */
+.table1 .data-table,
+.table2 .data-table,
+.table3 .data-table,
+.table4 .data-table {
+  border-collapse: collapse;
+  border: none; /* Quitar borde alrededor de la tabla */
+}
+
+.table1 .data-table th,
+.table1 .data-table td,
+.table2 .data-table th,
+.table2 .data-table td,
+.table3 .data-table th,
+.table3 .data-table td,
+.table4 .data-table th,
+.table4 .data-table td {
+  border: none; /* Sin bordes en celdas */
+  padding: 8px;
+  text-align: right;
+}
+
+.table1 .data-table th,
+.table2 .data-table th,
+.table3 .data-table th,
+.table4 .data-table th {
+  border-bottom: 3px solid #ccc; /* Se mantiene la línea inferior de la cabecera */
+  background-color: #f9f9f9;      /* Se conserva el color de fondo de la cabecera */
+}
+
+/* Fondos alternados */
+/* Para table1 y table2: filas impares con fondo gris */
+.table1 .data-table tr:nth-child(odd),
+.table2 .data-table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Para table3 y table4: cada dos filas (primer y segunda de cada grupo de 4) con fondo gris */
+.table3 .data-table tr:nth-child(4n+1),
+.table3 .data-table tr:nth-child(4n+2),
+.table4 .data-table tr:nth-child(4n+1),
+.table4 .data-table tr:nth-child(4n+2) {
+  background-color: #f2f2f2;
+}
+
+/* Alinear la primera columna a la izquierda en cada tabla personalizada */
+.table1 .data-table th:first-child,
+.table1 .data-table td:first-child,
+.table2 .data-table th:first-child,
+.table2 .data-table td:first-child,
+.table3 .data-table th:first-child,
+.table3 .data-table td:first-child,
+.table4 .data-table th:first-child,
+.table4 .data-table td:first-child {
+  text-align: left;
+}
