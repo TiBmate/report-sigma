@@ -6,12 +6,12 @@ import logging
 
 
 # Crea la carpeta "log" si no existe
-if not os.path.exists("log"):
-    os.makedirs("log")
+if not os.path.exists("/scraper/02DatosSitiosWeb/log"):
+    os.makedirs("/scraper/02DatosSitiosWeb/log")
 
 # Configuración del logger con la ruta del archivo en la carpeta "log"
 logging.basicConfig(
-    filename="log/01wtiCrude.log",  # Ruta donde se guardará el archivo log
+    filename="/scraper/02DatosSitiosWeb/log/01wtiCrude.log",  # Ruta donde se guardará el archivo log
     level=logging.DEBUG,  # Nivel mínimo de log
     format="%(asctime)s - %(levelname)s - %(message)s",  # Formato del log
     datefmt="%Y-%m-%d %H:%M:%S",  # Formato de fecha y hora
@@ -20,9 +20,9 @@ logging.basicConfig(
 logging.info("Iniciando la ejecución del script")
 
 # Crea de carpeta "wtiCrude" para almacenar el archivo CSV
-if not os.path.exists("csv"):
+if not os.path.exists("/scraper/02DatosSitiosWeb/csv"):
     logging.info("Creación de carpeta csv")
-    os.makedirs("csv")
+    os.makedirs("/scraper/02DatosSitiosWeb/csv")
 
 logging.info("Estableciendo los selectores")
 
