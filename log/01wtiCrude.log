@@ -1,0 +1,37 @@
+2025-06-15 09:13:37 - INFO - Iniciando la ejecución del script
+2025-06-15 09:13:37 - INFO - Creación de carpeta csv
+2025-06-15 09:13:37 - INFO - Estableciendo los selectores
+2025-06-15 09:13:37 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:13:37 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:19:35 - INFO - Iniciando la ejecución del script
+2025-06-15 09:19:35 - INFO - Estableciendo los selectores
+2025-06-15 09:19:35 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:19:35 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:26:47 - INFO - Iniciando la ejecución del script
+2025-06-15 09:26:47 - INFO - Estableciendo los selectores
+2025-06-15 09:26:47 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:26:47 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:35:50 - INFO - Iniciando la ejecución del script
+2025-06-15 09:35:50 - INFO - Estableciendo los selectores
+2025-06-15 09:35:50 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:35:50 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:35:51 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:35:55 - INFO - Termino de espera de carga de pagina web.
+2025-06-15 09:35:55 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-15 09:36:55 - ERROR - Error: El selector de fecha no apareció en 60 segundos. Revisa 'debug.png'.
+2025-06-15 09:44:18 - INFO - Iniciando la ejecución del script
+2025-06-15 09:44:18 - INFO - Estableciendo los selectores
+2025-06-15 09:44:18 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:44:18 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:44:18 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:44:19 - ERROR - Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+2025-06-15 09:44:32 - INFO - Iniciando la ejecución del script
+2025-06-15 09:44:32 - INFO - Estableciendo los selectores
+2025-06-15 09:44:32 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:44:32 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:44:32 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:44:38 - INFO - Termino de espera de carga de pagina web.
+2025-06-15 09:44:38 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-15 09:45:38 - ERROR - Error: El selector de fecha no apareció en 60 segundos. Revisa 'debug.png'.

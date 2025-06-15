@@ -1,0 +1,32 @@
+2025-06-15 09:13:39 - INFO - Estableciendo los selectores
+2025-06-15 09:13:39 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:13:39 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:26:49 - INFO - Estableciendo los selectores
+2025-06-15 09:26:49 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:26:49 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:38:12 - INFO - Estableciendo los selectores
+2025-06-15 09:38:12 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:38:12 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:38:12 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:38:13 - INFO - Termino de espera de carga de pagina web.
+2025-06-15 09:38:13 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-15 09:38:13 - INFO - Inicio de extracción de elementos
+2025-06-15 09:38:13 - INFO - Obteniendo el texto de los elementos.
+2025-06-15 09:38:13 - INFO - Transformando datos a puntos flotantes
+2025-06-15 09:38:13 - INFO - Eliminando simbolos especiales
+2025-06-15 09:38:13 - INFO - Creando archivo CSV
+2025-06-15 09:38:13 - INFO - Fin de ejecución del script
+2025-06-15 09:38:13 - INFO - ================================
+2025-06-15 09:46:57 - INFO - Estableciendo los selectores
+2025-06-15 09:46:57 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:46:57 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:46:58 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:46:58 - INFO - Termino de espera de carga de pagina web.
+2025-06-15 09:46:58 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-15 09:46:58 - INFO - Inicio de extracción de elementos
+2025-06-15 09:46:58 - INFO - Obteniendo el texto de los elementos.
+2025-06-15 09:46:58 - INFO - Transformando datos a puntos flotantes
+2025-06-15 09:46:58 - INFO - Eliminando simbolos especiales
+2025-06-15 09:46:58 - INFO - Creando archivo CSV
+2025-06-15 09:46:58 - INFO - Fin de ejecución del script
+2025-06-15 09:46:58 - INFO - ================================

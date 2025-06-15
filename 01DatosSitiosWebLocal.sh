@@ -1,7 +1,30 @@
 #!/bin/bash
 
 # Activar el entorno virtual report2
-source /home/it/.config/pythonEnv/report2/bin/activate
+
+eval "$(conda shell.bash hook)"
+conda activate /home/baltazarleon/anaconda3/envs/sigma-report
+
+#!/bin/bash
+
+echo -e "\n🔁 Activating Conda environment..."
+# Properly initialize Conda, even from a standalone .sh
+eval "$(conda shell.bash hook)"
+conda activate sigma-report || {
+    echo "❌ Error: Failed to activate the 'sigma-report' environment."
+    exit 1
+}
+
+echo -e "\n🔍 Checking Playwright browser installation..."
+
+# Check if browsers are installed (dry-run doesn't download anything)
+if ! playwright install --with-deps --dry-run &> /dev/null; then
+    echo "⚙️ Playwright browsers are missing. Installing now..."
+    playwright install
+else
+    echo "✅ Playwright browsers already installed."
+fi
+
 
 # Elimnar la carpeta csv
 echo -e "\n Eliminando carpeta CSV ..."
@@ -41,7 +64,7 @@ python ./scraper/02DatosSitiosWeb/07USCrudeOilInventory.py
 echo -e "\n====== Integrando los datos de sitios web con datos historicos ======"
 
 # Ejecutar el helper de integración de datos de sitio web con datos historicos
-Python ./scraper/10HelperWeb-HistoricoSemanal.py
+python ./scraper/10HelperWeb-HistoricoSemanal.py
 
 
 

@@ -1,0 +1,24 @@
+2025-06-15 09:13:38 - INFO - Iniciando la ejecución del script
+2025-06-15 09:13:38 - INFO - Estableciendo los selectores
+2025-06-15 09:13:38 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:13:38 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:26:47 - INFO - Iniciando la ejecución del script
+2025-06-15 09:26:47 - INFO - Estableciendo los selectores
+2025-06-15 09:26:47 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:26:47 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:36:56 - INFO - Iniciando la ejecución del script
+2025-06-15 09:36:56 - INFO - Estableciendo los selectores
+2025-06-15 09:36:56 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:36:56 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:36:56 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:37:02 - INFO - Termino de espera de carga de pagina web.
+2025-06-15 09:37:02 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-15 09:38:03 - ERROR - Error: El selector de fecha no apareció en 60 segundos. Revisa 'debug.png'.
+2025-06-15 09:45:39 - INFO - Iniciando la ejecución del script
+2025-06-15 09:45:39 - INFO - Estableciendo los selectores
+2025-06-15 09:45:39 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:45:39 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:45:39 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:45:48 - INFO - Termino de espera de carga de pagina web.
+2025-06-15 09:45:48 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-15 09:46:48 - ERROR - Error: El selector de fecha no apareció en 60 segundos. Revisa 'debug.png'.

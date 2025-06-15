@@ -1,0 +1,36 @@
+2025-06-15 09:13:39 - INFO - Estableciendo los selectores
+2025-06-15 09:13:39 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:13:39 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:26:49 - INFO - Estableciendo los selectores
+2025-06-15 09:26:49 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:26:49 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:38:13 - INFO - Estableciendo los selectores
+2025-06-15 09:38:13 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:38:13 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:38:15 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:38:17 - INFO - Termino de espera de carga de pagina web.
+2025-06-15 09:38:17 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-15 09:38:17 - INFO - Inicio de extracción de elementos
+2025-06-15 09:38:17 - INFO - Obteniendo el texto de los elementos.
+2025-06-15 09:38:17 - ERROR - Error en la conversión de fecha: time data '13 June\n2025' does not match format '%d %b %Y'
+2025-06-15 09:38:18 - INFO - Transformando datos a puntos flotantes
+2025-06-15 09:38:18 - INFO - Eliminando simbolos especiales
+2025-06-15 09:38:18 - INFO - Eliminando simbolos especiales
+2025-06-15 09:38:18 - INFO - Creando archivo CSV
+2025-06-15 09:38:18 - INFO - Fin de ejecución del script
+2025-06-15 09:38:18 - INFO - ================================
+2025-06-15 09:46:58 - INFO - Estableciendo los selectores
+2025-06-15 09:46:58 - INFO - Enviando cabeceras al sitio web
+2025-06-15 09:46:58 - DEBUG - Using selector: EpollSelector
+2025-06-15 09:47:00 - INFO - Inicio de espera de carga de pagina web.
+2025-06-15 09:47:02 - INFO - Termino de espera de carga de pagina web.
+2025-06-15 09:47:02 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-15 09:47:02 - INFO - Inicio de extracción de elementos
+2025-06-15 09:47:02 - INFO - Obteniendo el texto de los elementos.
+2025-06-15 09:47:02 - ERROR - Error en la conversión de fecha: time data '13 June\n2025' does not match format '%d %b %Y'
+2025-06-15 09:47:03 - INFO - Transformando datos a puntos flotantes
+2025-06-15 09:47:03 - INFO - Eliminando simbolos especiales
+2025-06-15 09:47:03 - INFO - Eliminando simbolos especiales
+2025-06-15 09:47:03 - INFO - Creando archivo CSV
+2025-06-15 09:47:03 - INFO - Fin de ejecución del script
+2025-06-15 09:47:03 - INFO - ================================

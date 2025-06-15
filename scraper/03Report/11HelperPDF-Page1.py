@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 
+
 def crear_tabla_datos_semana(WTI, NaturalGas, GasolineGas, OilService, NorthAmericanRigs, UnitedStatesRigs, USCrudeOil):
     
     archivos = {
@@ -102,13 +103,13 @@ def crear_tabla_datos_mes(International, NorthAmerica, WorldWide):
 if __name__ == "__main__":
     # Crear tabla semanal
     tabla_resultante_semana = crear_tabla_datos_semana(
-        "../01HistoricalDatabase/01WTICrudeHistoricalSemana.csv",
-        "../01HistoricalDatabase/02NaturalGasCashHistoricalSemana.csv",
-        "../01HistoricalDatabase/03GasolinePricesHistoricalSemana.csv",
-        "../01HistoricalDatabase/04OilServicesHistoricalSemana.csv",
-        "../01HistoricalDatabase/06NorthAmericanRigHistoricalSemana.csv",
-        "../01HistoricalDatabase/06USRigHistoricalSemana.csv",
-        "../01HistoricalDatabase/07USPetroleumStockHistoricalSemana.csv"
+        "scraper/01HistoricalDatabase/01WTICrudeHistoricalSemana.csv",
+        "scraper/01HistoricalDatabase/02NaturalGasCashHistoricalSemana.csv",
+        "scraper/01HistoricalDatabase/03GasolinePricesHistoricalSemana.csv",
+        "scraper/01HistoricalDatabase/04OilServicesHistoricalSemana.csv",
+        "scraper/01HistoricalDatabase/06NorthAmericanRigHistoricalSemana.csv",
+        "scraper/01HistoricalDatabase/06USRigHistoricalSemana.csv",
+        "scraper/01HistoricalDatabase/07USPetroleumStockHistoricalSemana.csv"
     )
     
     print("Tabla Semanal:")
@@ -126,9 +127,9 @@ if __name__ == "__main__":
     
     # Crear tabla mensual
     tabla_resultante_mes = crear_tabla_datos_mes(
-        "../01HistoricalDatabase/10InternationalRigMensual.csv",
-        "../01HistoricalDatabase/11NorthAmericaRigMensual.csv",
-        "../01HistoricalDatabase/12WorldWideRigMensual.csv"
+        "scraper//01HistoricalDatabase/10InternationalRigMensual.csv",
+        "scraper//01HistoricalDatabase/11NorthAmericaRigMensual.csv",
+        "scraper//01HistoricalDatabase/12WorldWideRigMensual.csv"
     )
     
     print("\nTabla Mensual:")
