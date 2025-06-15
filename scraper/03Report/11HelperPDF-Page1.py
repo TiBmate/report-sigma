@@ -126,9 +126,9 @@ if __name__ == "__main__":
     
     # Crear tabla mensual
     tabla_resultante_mes = crear_tabla_datos_mes(
-        "../01HistoricalDatabase/10InternationalRigMensual.csv",
-        "../01HistoricalDatabase/11NorthAmericaRigMensual.csv",
-        "../01HistoricalDatabase/12WorldWideRigMensual.csv"
+        "scraper/01HistoricalDatabase/10InternationalRigMensual.csv",
+        "scraper/01HistoricalDatabase/11NorthAmericaRigMensual.csv",
+        "scraper/01HistoricalDatabase/12WorldWideRigMensual.csv"
     )
     
     print("\nTabla Mensual:")
