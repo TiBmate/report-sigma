@@ -8,7 +8,7 @@ if not os.path.exists("graficas"):
     os.makedirs("graficas")
 
 # Cargar el archivo CSV ubicado en "./historicalDatabase/03GasolinePricesHistoricalSemana.csv"
-csv_path = "../01HistoricalDatabase/03GasolinePricesHistoricalSemana.csv"
+csv_path = "scraper/01HistoricalDatabase/03GasolinePricesHistoricalSemana.csv"
 df = pd.read_csv(csv_path)
 
 # Convertir la columna "Time" a tipo datetime y ordenar (en caso de que no lo esté)
