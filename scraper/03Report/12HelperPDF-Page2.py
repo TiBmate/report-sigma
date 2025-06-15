@@ -104,7 +104,7 @@ def crear_tabla_datos_mes(International, NorthAmerica, WorldWide):
         # Fila 2: datos de la fuente y otros valores
         # Agregar el símbolo "%" al valor extraído"
         month_change = f"{df['%Chg'].iloc[0]}%"
-        year_change = f"{df["Year%Chg"].iloc[0]}%"
+        year_change = f"{df['Year%Chg'].iloc[0]}%"
         fila2 = {
             "Monthly Statistic": sources[i],
             "Feb 2025": "-",
@@ -138,19 +138,19 @@ def crear_tabla_datos_mes(International, NorthAmerica, WorldWide):
 # Ejemplo de uso:
 if __name__ == "__main__":
     # Archivos para la tabla semanal
-    WTI = "../01HistoricalDatabase/01WTICrudeHistoricalSemana.csv"
-    NaturalGas = "../01HistoricalDatabase/02NaturalGasCashHistoricalSemana.csv"
-    GasolineGas = "../01HistoricalDatabase/03GasolinePricesHistoricalSemana.csv"
-    OilService = "../01HistoricalDatabase/04OilServicesHistoricalSemana.csv"
-    NaturalGasStorage = "../01HistoricalDatabase/05NaturalGasStorageHistoricalSemana.csv"
-    NorthAmericanRig = "../01HistoricalDatabase/06NorthAmericanRigHistoricalSemana.csv"
-    USPetroleum = "../01HistoricalDatabase/07USPetroleumStockHistoricalSemana.csv"
+    WTI = "scraper/01HistoricalDatabase/01WTICrudeHistoricalSemana.csv"
+    NaturalGas = "scraper/01HistoricalDatabase/02NaturalGasCashHistoricalSemana.csv"
+    GasolineGas = "scraper/01HistoricalDatabase/03GasolinePricesHistoricalSemana.csv"
+    OilService = "scraper/01HistoricalDatabase/04OilServicesHistoricalSemana.csv"
+    NaturalGasStorage = "scraper/01HistoricalDatabase/05NaturalGasStorageHistoricalSemana.csv"
+    NorthAmericanRig = "scraper/01HistoricalDatabase/06NorthAmericanRigHistoricalSemana.csv"
+    USPetroleum = "scraper/01HistoricalDatabase/07USPetroleumStockHistoricalSemana.csv"
     
     crear_tabla_datos_semana(WTI, NaturalGas, GasolineGas, OilService, NaturalGasStorage, NorthAmericanRig, USPetroleum)
     
     # Archivos para la tabla mensual
-    International = "../01HistoricalDatabase/10InternationalRigMensual.csv"
-    NorthAmerica = "../01HistoricalDatabase/11NorthAmericaRigMensual.csv"
-    WorldWide = "../01HistoricalDatabase/12WorldWideRigMensual.csv"
+    International = "scraper/01HistoricalDatabase/10InternationalRigMensual.csv"
+    NorthAmerica = "scraper/01HistoricalDatabase/11NorthAmericaRigMensual.csv"
+    WorldWide = "scraper/01HistoricalDatabase/12WorldWideRigMensual.csv"
     
     crear_tabla_datos_mes(International, NorthAmerica, WorldWide)
