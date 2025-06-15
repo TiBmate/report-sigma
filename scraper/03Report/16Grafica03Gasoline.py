@@ -75,5 +75,5 @@ plt.text(1, 0, "www.eia.gov \n Weekly U.S. Regular All Formulations Retail Gasol
 plt.tight_layout()
 
 # Guardar la gráfica en la carpeta "graficas" con el nombre "03Gasoline.png"
-plt.savefig("graficas/03Gasoline.png")
+plt.savefig("scraper/03Report/graficas/03Gasoline.png")
 plt.close()

@@ -77,5 +77,5 @@ plt.text(1, 0, "barchart.com \n CLY00", transform=plt.gca().transAxes,
 plt.tight_layout()
 
 # Guardar la gráfica en la carpeta "graficas" con el nombre "WTI.png"
-plt.savefig("graficas/01WTI.png")
+plt.savefig("scraper/03Report/graficas/01WTI.png")
 plt.close()

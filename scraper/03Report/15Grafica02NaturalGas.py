@@ -77,5 +77,5 @@ plt.text(1, 0, "barchart.com \n NGY00", transform=plt.gca().transAxes,
 plt.tight_layout()
 
 # Guardar la gráfica en la carpeta "graficas" con el nombre "02Natural.png"
-plt.savefig("graficas/02Natural.png")
+plt.savefig("scraper/03Report/graficas/02Natural.png")
 plt.close()

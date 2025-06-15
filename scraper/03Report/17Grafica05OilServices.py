@@ -75,5 +75,5 @@ plt.text(1, 0, "finance.yahoo.com \n ^OSX", transform=plt.gca().transAxes,
 plt.tight_layout()
 
 # Guardar la gráfica en la carpeta "graficas" con el nombre "04OilServices.png"
-plt.savefig("graficas/04OilServices.png")
+plt.savefig("scraper/03Report/graficas/04OilServices.png")
 plt.close()
