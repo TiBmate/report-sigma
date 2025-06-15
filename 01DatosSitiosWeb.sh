@@ -41,7 +41,7 @@ python ./scraper/02DatosSitiosWeb/07USCrudeOilInventory.py
 echo -e "\n====== Integrando los datos de sitios web con datos historicos ======"
 
 # Ejecutar el helper de integración de datos de sitio web con datos historicos
-Python ./scraper/10HelperWeb-HistoricoSemanal.py
+python ./scraper/10HelperWeb-HistoricoSemanal.py
 
 
 
