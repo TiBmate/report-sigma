@@ -102,7 +102,7 @@ print("Last:", valor)
 
 
 # Nombre del archivo con marca de tiempo
-filename = f"csv/datos_02naturalGasCash.csv"
+filename = f"/scraper/02DatosSitiosWeb/csv/datos_02naturalGasCash.csv"
 
 # Guardar los datos en un archivo CSV, incluyendo el timestamp en el registro
 logging.info("Creando archivo CSV")

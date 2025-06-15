@@ -12,7 +12,7 @@ fileLog = f"04{webRegistro}.log"
 pathLog = f"log/{fileLog}"
 
 # Ruta donde se guarda el archivo CSV
-pathCsv = f"csv"
+pathCsv = f"/scraper/02DatosSitiosWeb/csv"
 
 # Nombre de archivo
 fileCsv = f"{pathCsv}/datos_04{webRegistro}.csv"
