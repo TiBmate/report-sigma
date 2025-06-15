@@ -1,5 +1,25 @@
 #!/bin/bash
 
+# Load conda commands into the shell
+eval "$(conda shell.bash hook)"
+
+# Check if the environment exists
+if conda info --envs | grep -q "^report-sigma\s"; then
+    echo "✅ Environment 'report-sigma' found."
+else
+    echo "🔧 Creating environment 'report-sigma'..."
+    conda create -y -n report-sigma python=3.10
+fi
+
+# Activate the environment
+echo "🚀 Activating environment..."
+conda activate report-sigma
+
+# Install dependencies
+echo "📦 Installing dependencies from requirements.txt..."
+pip install -r requirements.txt
+playwright install
+
 # Activar el entorno virtual report2
 source /home/it/.config/pythonEnv/report2/bin/activate
 
