@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 # Verificar si existe la carpeta "graficas", de lo contrario se crea.
-if not os.path.exists("graficas"):
-    os.makedirs("graficas")
+if not os.path.exists("scraper/03Report/graficas"):
+    os.makedirs("scraper/03Reportscraper/graficas")
 
 # Cargar el archivo CSV ubicado en "./historicalDatabase/01WTICrudeHistoricalSemana.csv"
 csv_path = "scraper/01HistoricalDatabase/01WTICrudeHistoricalSemana.csv"

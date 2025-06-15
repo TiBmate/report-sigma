@@ -119,7 +119,7 @@ with sync_playwright() as p:
                 if chunk:
                     file_data += chunk
 
-        file_path = "/scraper/02DatosSitiosWeb/originalRigs.xlsx"
+        file_path = "scraper/02DatosSitiosWeb/originalRigs.xlsx"
 
         with open(file_path, "wb") as f:
             f.write(file_data)
