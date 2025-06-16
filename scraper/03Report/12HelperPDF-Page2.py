@@ -63,7 +63,7 @@ def crear_tabla_datos_semana(WTI, NaturalGas, GasolineGas, OilService, NaturalGa
     tabla = pd.DataFrame(filas, columns=columnas)
 
     # Verifica si la carpeta "csvPDF-Page2" existe, si no, la crea
-    carpeta_salida = "csvPDF-Page2"
+    carpeta_salida = "scraper/03Report/csvPDF-Page2"
     if not os.path.exists(carpeta_salida):
         os.makedirs(carpeta_salida)
 
