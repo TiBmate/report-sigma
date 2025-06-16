@@ -177,36 +177,36 @@ if __name__ == "__main__":
     # Definición de rutas para cada par de archivos
 
     # WTI Crude
-    ruta_datos_wtiActual = "./02DatosSitiosWeb/csv/datos_01wtiCrude.csv"
-    ruta_historico_wtiHistorical = "./01HistoricalDatabase/01WTICrudeHistoricalSemana.csv"
+    ruta_datos_wtiActual = "scraper/02DatosSitiosWeb/csv/datos_01wtiCrude.csv"
+    ruta_historico_wtiHistorical = "scraper/01HistoricalDatabase/01WTICrudeHistoricalSemana.csv"
 
     # Natural Gas
-    ruta_datos_naturalGasActual = "./02DatosSitiosWeb/csv/datos_02naturalGasCash.csv"
-    ruta_historico_naturalGasHistorical = "./01HistoricalDatabase/02NaturalGasCashHistoricalSemana.csv"
+    ruta_datos_naturalGasActual = "scraper/02DatosSitiosWeb/csv/datos_02naturalGasCash.csv"
+    ruta_historico_naturalGasHistorical = "scraper/01HistoricalDatabase/02NaturalGasCashHistoricalSemana.csv"
 
     # Gasoline Prices
-    ruta_datos_gasolinePricesActual = "./02DatosSitiosWeb/csv/datos_03gasolinePrices.csv"
-    ruta_historico_gasolinePricesHistorical = "./01HistoricalDatabase/03GasolinePricesHistoricalSemana.csv"
+    ruta_datos_gasolinePricesActual = "scraper/02DatosSitiosWeb/csv/datos_03gasolinePrices.csv"
+    ruta_historico_gasolinePricesHistorical = "scraper/01HistoricalDatabase/03GasolinePricesHistoricalSemana.csv"
 
     # Oil Services Crude
-    ruta_datos_oilServicesActual = "./02DatosSitiosWeb/csv/datos_04oilServicesSector.csv"
-    ruta_historico_oilServicesHistorical = "./01HistoricalDatabase/04OilServicesHistoricalSemana.csv"
+    ruta_datos_oilServicesActual = "scraper/02DatosSitiosWeb/csv/datos_04oilServicesSector.csv"
+    ruta_historico_oilServicesHistorical = "scraper/01HistoricalDatabase/04OilServicesHistoricalSemana.csv"
 
     # Natural GasStorage (con cálculos extras)
-    ruta_datos_NaturalGasStorageActual = "./02DatosSitiosWeb/csv/datos_05naturalGasStorage.csv"
-    ruta_historico_NaturalGasStorageHistorical = "./01HistoricalDatabase/05NaturalGasStorageHistoricalSemana.csv"
+    ruta_datos_NaturalGasStorageActual = "scraper/02DatosSitiosWeb/csv/datos_05naturalGasStorage.csv"
+    ruta_historico_NaturalGasStorageHistorical = "scraper/01HistoricalDatabase/05NaturalGasStorageHistoricalSemana.csv"
 
     # North AmericanRig
-    ruta_datos_NorthAmericanRigActual = "./02DatosSitiosWeb/csv/datos_06northAmericanRigs.csv"
-    ruta_historico_NorthAmericanRigHistorical = "./01HistoricalDatabase/06NorthAmericanRigHistoricalSemana.csv"
+    ruta_datos_NorthAmericanRigActual = "scraper/02DatosSitiosWeb/csv/datos_06northAmericanRigs.csv"
+    ruta_historico_NorthAmericanRigHistorical = "scraper/01HistoricalDatabase/06NorthAmericanRigHistoricalSemana.csv"
 
     # US Rig
-    ruta_datos_USRigActual = "./02DatosSitiosWeb/csv/datos_06usRigs.csv"
-    ruta_historico_USRigHistorical = "./01HistoricalDatabase/06USRigHistoricalSemana.csv"
+    ruta_datos_USRigActual = "scraper/02DatosSitiosWeb/csv/datos_06usRigs.csv"
+    ruta_historico_USRigHistorical = "scraper/01HistoricalDatabase/06USRigHistoricalSemana.csv"
 
     # US Petroleum Stock
-    ruta_datos_USPetroleumStockActual = "./02DatosSitiosWeb/csv/datos_07usCrudeOilInventory.csv"
-    ruta_historico_USPetroleumStockHistorical = "./01HistoricalDatabase/07USPetroleumStockHistoricalSemana.csv"
+    ruta_datos_USPetroleumStockActual = "scraper/02DatosSitiosWeb/csv/datos_07usCrudeOilInventory.csv"
+    ruta_historico_USPetroleumStockHistorical = "scraper/01HistoricalDatabase/07USPetroleumStockHistoricalSemana.csv"
 
     # Procesar cada par de archivos
     actualizar_historico(ruta_datos_wtiActual, ruta_historico_wtiHistorical)
