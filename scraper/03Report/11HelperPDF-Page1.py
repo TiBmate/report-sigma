@@ -115,7 +115,7 @@ if __name__ == "__main__":
     print(tabla_resultante_semana)
     
     # Verificar o crear carpeta 'csvPDF'
-    output_dir = "csvPDF-Page1"
+    output_dir = "scraper/03Report/csvPDF-Page1"
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
