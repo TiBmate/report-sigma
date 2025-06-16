@@ -97,7 +97,12 @@ with sync_playwright() as p:
     if fecha_str != "N/D":
         try:
             # Se asume que la fecha viene en formato "Feb 28, 2025"
-            fecha_dt = datetime.datetime.strptime(fecha_str, "%d %b %Y")
+            # Clean up: remove line breaks and extra whitespace
+            fecha_str_clean = " ".join(fecha_str.split())
+
+            # Now parse
+            fecha_dt = datetime.datetime.strptime(fecha_str_clean, "%d %B %Y")
+
             # Se transforma al formato "02/28/2025"
             fecha = fecha_dt.strftime("%m/%d/%y")
         except Exception as e:
