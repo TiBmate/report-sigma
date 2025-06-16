@@ -3,6 +3,17 @@ import csv
 import datetime
 import os
 import logging
+from bs4 import BeautifulSoup
+import requests
+
+# Primero defines la función
+def parse_float(value):
+    try:
+        cleaned = value.replace(",", "").replace("$", "").replace("s", "").replace("%", "").strip()
+        return float(cleaned)
+    except Exception as e:
+        logging.error(f"Error al convertir valor: {e}")
+        return None
 
 
 # Crea la carpeta "log" si no existe
@@ -28,8 +39,8 @@ logging.info("Estableciendo los selectores")
 
 # URL y selectores
 url = "https://www.barchart.com/futures/quotes/CLY00"
-selector_fecha = "#main-content-column > div > div.page-title.symbol-header-info.clearfix.ng-scope > div:nth-child(2) > span.symbol-trade-time.ng-binding"
-selector_valor = "#main-content-column > div > div.page-title.symbol-header-info.clearfix.ng-scope > div:nth-child(2) > span.last-change.ng-binding"
+selector_fecha = "span.symbol-trade-time"
+selector_valor = "span.last-change"
 
 logging.info("Enviando cabeceras al sitio web")
 with sync_playwright() as p:
@@ -56,48 +67,30 @@ with sync_playwright() as p:
         print("Error: La navegación a la URL no se completó en el tiempo esperado. Revisa 'goto_error.png'")
         browser.close()
         exit(1)
-    
-    try:
-        logging.info("Iniciando la espera del primer selector, fecha")
-        page.wait_for_selector(selector_fecha, timeout=60000)
-    except TimeoutError:
-        page.screenshot(path="debug.png")
-        logging.error(f"Error: El selector de fecha no apareció en 60 segundos. Revisa 'debug.png'.")
-        print("Error: El selector de fecha no apareció en 60 segundos. Revisa 'debug.png'.")
-        browser.close()
-        exit(1)
-
-    # Extraer los elementos
-    logging.info("Inicio de extracción de elementos")
-    fecha_element = page.query_selector(selector_fecha)
-    valor_element = page.query_selector(selector_valor)
-    
-    # Obtener los textos de los elementos, controlando si existen
-    logging.info("Obteniendo el texto de los elementos.")
-    fecha = fecha_element.inner_text().strip() if fecha_element else "N/D"
-    valor_str = valor_element.inner_text().strip() if valor_element else "N/D"
-    
+    html = page.content()
     browser.close()
 
-# Función para convertir a float eliminando caracteres no deseados
-def parse_float(value):
-    try:
-        # Se eliminan comas, símbolos de moneda y de porcentaje
-        logging.info("Eliminando simbolos especiales")
-        cleaned = value.replace(",", "").replace("$", "").replace("s", "").replace("%", "").strip()
-        return float(cleaned)
-    except Exception as e:
-        logging.error(f"Error: {e}")
-        return None
-        
+# Procesar HTML con BeautifulSoup
+soup = BeautifulSoup(html, "html.parser")
+fecha_element = soup.select_one(selector_fecha)
+valor_element = soup.select_one(selector_valor)
 
-# Transformar los datos
-logging.info("Transformando datos a puntos flotantes")
+# Extraer texto
+fecha = fecha_element.text.strip() if fecha_element else "N/D"
+valor_str = valor_element.text.strip() if valor_element else "N/D"
+
+# Convertir valor a float
 valor = parse_float(valor_str)
 
-# Mostrar los datos obtenidos
-print("Time:", fecha)
-print("Last:", valor)
+# Mostrar resultados en consola
+print("✅ Fecha:", fecha)
+print("✅ Valor:", valor)
+
+# Registrar en log
+logging.info(f"Fecha obtenida: {fecha}")
+logging.info(f"Valor obtenido: {valor}")
+logging.info("Fin de ejecución del script")
+
 
 
 # Nombre del archivo con marca de tiempo
