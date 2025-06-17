@@ -20,9 +20,6 @@ echo "📦 Installing dependencies from requirements.txt..."
 pip install -r requirements.txt
 playwright install
 
-# Activar el entorno virtual report2
-source /home/it/.config/pythonEnv/report2/bin/activate
-
 # Elimnar la carpeta csv
 echo -e "\n Eliminando carpeta CSV ..."
 rm -rf ./scraper/02DatosSitiosWeb/csv
@@ -111,4 +108,4 @@ echo -e "\n====== Cambios realizados ======"
 
 
 # Desactivar el entorno virtual al finalizar
-deactivate
+conda deactivate
