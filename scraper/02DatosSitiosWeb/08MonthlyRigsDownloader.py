@@ -11,10 +11,11 @@ import tempfile
 main_url = "https://bakerhughesrigcount.gcs-web.com/intl-rig-count"
 
 # Output Direction for the
-OUTPUT_DIR = "test"
+OUTPUT_DIR = "scraper/02DatosSitiosWeb/csv"
 
 # Function to Extract Monthly Table from the xlsx file
-def extract_table_to_csv(excel_path, sheet_name="WW Monthly", table_name="WW_Monthly", output_csv="test/WW_Monthly.csv"):
+def extract_table_to_csv(excel_path, sheet_name="WW Monthly", table_name="WW_Monthly", output_csv=os.path.join(OUTPUT_DIR, "WorldWide_Rig_Count.csv"
+)):
     try:
         wb = load_workbook(excel_path, data_only=True)
         ws = wb[sheet_name]  # Load the correct worksheet
