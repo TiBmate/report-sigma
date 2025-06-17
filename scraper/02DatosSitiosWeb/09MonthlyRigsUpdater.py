@@ -31,29 +31,35 @@ def analyze_worldwide_rig_data():
     total_rig_count = filtered["Rig Count Value"].sum()
     print(f"🔎 Total Rig Count for {mes}/{anio}: {total_rig_count}")
 
-    # Step 4: Compare with 'Last' from historical file
     if total_rig_count == last:
-        # Look for next month
         print("✅ No changes. Looking for next month...")
-
-        # Build the next month and year
-        anio_int = int(anio)
-        mes_int = int(mes)
-        if mes_int == 12:
-            next_anio = str(anio_int + 1)
-            next_mes = "01"
-        else:
-            next_anio = anio
-            next_mes = str(mes_int + 1)
-
-        next_filtered = new_df[(new_df["Year"] == next_anio) & (new_df["Month"] == next_mes)]
-
-        if not next_filtered.empty:
-            print("📈 New month data encountered.")
-        else:
-            print("📉 No new month data available.")
     else:
-        print("⚠️ Rig Count has changed.")
+        print("⚠️ Rig Count has changed. Updating historical value...")
+        hist_df.at[0, "Last"] = total_rig_count
+        hist_df.to_csv(hist_path, index=False)
+        print(f"✅ Updated 'Last' value to {total_rig_count} in historical file.")
+
+    # Step 4: Look for the next month
+    anio_int = int(anio)
+    mes_int = int(mes)
+    if mes_int == 12:
+        next_anio = str(anio_int + 1)
+        next_mes = "01"
+    else:
+        next_anio = anio
+        next_mes = str(mes_int + 1).zfill(2)
+
+    next_filtered = new_df[(new_df["Year"] == next_anio) & (new_df["Month"] == next_mes)]
+
+    if not next_filtered.empty:
+        print("📈 New month data encountered. Adding to historical file...")
+        next_total = next_filtered["Rig Count Value"].sum()
+        new_row = pd.DataFrame([[next_anio, next_mes, next_total]], columns=["Anio", "Mes", "Last"])
+        updated_hist_df = pd.concat([new_row, hist_df], ignore_index=True)
+        updated_hist_df.to_csv(hist_path, index=False)
+        print(f"✅ Added new row: [{next_anio}, {next_mes}, {next_total}] to historical file.")
+    else:
+        print("📉 No new month data available.")
 
 if __name__ == "__main__":
     analyze_worldwide_rig_data()
