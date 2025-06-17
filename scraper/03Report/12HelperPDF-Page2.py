@@ -75,8 +75,39 @@ def crear_tabla_datos_semana(WTI, NaturalGas, GasolineGas, OilService, NaturalGa
     print(tabla)
     print("Archivo guardado en:", ruta_salida)
 
+def obtener_month_ending():
+    """
+    Lee el primer valor de la columna "Anio" y "Mes" del archivo CSV ubicado en:
+    ./scraper/01HistoricalDatabase/10InternationalRigMensual.csv, donde "Anio" está en formato YYYY y "Mes" en formato MM.
+    Transforma estos valores al formato "March, 2025".
+    """
+    df = pd.read_csv("./scraper/01HistoricalDatabase/10InternationalRigMensual.csv", dtype=str)
+    anio = df["Anio"].iloc[0]
+    mes = df["Mes"].iloc[0]
+    dt = datetime(int(anio), int(mes), 1)
+    month_ending = dt.strftime("%B, %Y")
+    return month_ending
+
+def obtener_fecha_base():
+    """
+    Lee el primer valor de las columnas "Anio" y "Mes" del archivo base y construye una fecha.
+    """
+    df = pd.read_csv("./scraper/01HistoricalDatabase/10InternationalRigMensual.csv", dtype=str)
+    anio = df["Anio"].iloc[0]
+    mes = df["Mes"].iloc[0]
+    dt = datetime(int(anio), int(mes), 1)
+    return dt.strftime("%Y-%m-%d")  # Ej: "2025-02-01"
 
 def crear_tabla_datos_mes(International, NorthAmerica, WorldWide):
+    # Obtener fecha base desde archivo
+    fecha_str = obtener_fecha_base()
+    fecha_base = datetime.strptime(fecha_str, "%Y-%m-%d")
+
+    # Generar encabezados dinámicos
+    mes_actual = fecha_base.strftime("%b %Y")         # Ej: "Feb 2025"
+    mes_anterior = (fecha_base - relativedelta(months=1)).strftime("%b %Y")   # Ej: "Jan 2025"
+    mismo_mes_ano_pasado = (fecha_base - relativedelta(years=1)).strftime("%b %Y")  # Ej: "Feb 2024"
+
     # Lista de archivos y nombres asociados
     archivos = [International, NorthAmerica, WorldWide]
     nombres = ["International Rig Count", "North American Rig Count", "World Wide Rig Count"]
@@ -94,11 +125,11 @@ def crear_tabla_datos_mes(International, NorthAmerica, WorldWide):
         last = int(df["Last"].iloc[0])
         fila1 = {
             "Monthly Statistic": nombres[i],
-            "Feb 2025": last,
+            mes_actual: last,
             "Month Change": df["Change"].iloc[0],
-            "Jan 2025": df["Last"].iloc[1],
+            mes_anterior: df["Last"].iloc[1],
             "Year Change": df["YearChange"].iloc[0],
-            "Feb 2024": df["Last"].iloc[12]
+            mismo_mes_ano_pasado: df["Last"].iloc[12]
         }
         
         # Fila 2: datos de la fuente y otros valores
@@ -107,18 +138,18 @@ def crear_tabla_datos_mes(International, NorthAmerica, WorldWide):
         year_change = f"{df['Year%Chg'].iloc[0]}%"
         fila2 = {
             "Monthly Statistic": sources[i],
-            "Feb 2025": "-",
+            mes_actual: "-",
             "Month Change": month_change,
-            "Jan 2025": "-",
+            mes_anterior: "-",
             "Year Change": year_change,
-            "Feb 2024": "-"
+            mismo_mes_ano_pasado: "-"
         }
         
         filas.append(fila1)
         filas.append(fila2)
     
     # Se crea el DataFrame con las columnas especificadas
-    columnas = ["Monthly Statistic", "Feb 2025", "Month Change", "Jan 2025", "Year Change", "Feb 2024"]
+    columnas = ["Monthly Statistic", mes_actual, "Month Change", mes_anterior, "Year Change", mismo_mes_ano_pasado]
     tabla = pd.DataFrame(filas, columns=columnas)
     
     # Verifica si la carpeta "csvPDF-Page2" existe, si no, la crea
