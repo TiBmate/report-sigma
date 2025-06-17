@@ -54,7 +54,7 @@ echo -e "\n Ejecutando 07USCrudeOilInventory.py..."
 python ./scraper/02DatosSitiosWeb/07USCrudeOilInventory.py
 
 echo -e "\n Ejecutando 08MonthlyRigsDownloader.py..."
-python ./scraper/02DatosSitiosWeb/08MonthlyRigsDownloader.py
+xvfb-run python ./scraper/02DatosSitiosWeb/08MonthlyRigsDownloader.py
 
 echo -e "\n Ejecutando 09MonthlyRigsUpdater.py..."
 python ./scraper/02DatosSitiosWeb/09MonthlyRigsUpdater.py
