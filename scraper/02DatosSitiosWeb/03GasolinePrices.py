@@ -8,7 +8,7 @@ webRegistro = f"gasolinePrices"
 
 # Nombre del archivo log
 fileLog = f"03{webRegistro}.log"
-pathLog = f"log/{fileLog}"
+pathLog = f"scraper/02DatosSitiosWeb/log/{fileLog}"
 
 # Ruta donde se guarda el archivo CSV
 pathCsv = f"scraper/02DatosSitiosWeb/csv"
@@ -17,8 +17,8 @@ pathCsv = f"scraper/02DatosSitiosWeb/csv"
 fileCsv = f"{pathCsv}/datos_03{webRegistro}.csv"
 
 # Crea la carpeta "log" si no existe
-if not os.path.exists("log"):
-    os.makedirs("log")
+if not os.path.exists("scraper/02DatosSitiosWeb/log"):
+    os.makedirs("scraper/02DatosSitiosWeb/log")
 
 # Configuración del logger con la ruta del archivo en la carpeta "log"
 logging.basicConfig(
