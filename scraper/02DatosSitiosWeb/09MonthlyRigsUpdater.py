@@ -34,8 +34,7 @@ def recalculate_first_row(hist_df):
 def dataframe_checksum(df):
     return hashlib.md5(pd.util.hash_pandas_object(df, index=True).values).hexdigest()
 
-def analyze_worldwide_rig_data():
-    hist_path = "scraper/01HistoricalDatabase/12WorldWideRigMensual.csv"
+def process_rig_file(hist_path, region_filter_func=None):
     hist_df = pd.read_csv(hist_path, dtype=str)
     original_checksum = dataframe_checksum(hist_df)
 
@@ -49,6 +48,10 @@ def analyze_worldwide_rig_data():
     new_path = "scraper/02DatosSitiosWeb/csv/WorldWide_Rig_Count.csv"
     new_df = pd.read_csv(new_path, dtype=str)
     new_df["Rig Count Value"] = new_df["Rig Count Value"].astype(float).round(0).astype(int)
+
+    # Apply region filter function if provided
+    if region_filter_func:
+        new_df = region_filter_func(new_df)
 
     filtered = new_df[(new_df["Year"] == anio) & (new_df["Month"] == mes)]
     if filtered.empty:
@@ -94,4 +97,6 @@ def analyze_worldwide_rig_data():
         print("🟡 No changes detected. File was not modified.")
 
 if __name__ == "__main__":
-    analyze_worldwide_rig_data()
+    process_rig_file("scraper/01HistoricalDatabase/10InternationalRigMensual.csv", region_filter_func=lambda df: df[df["Region"] != "North America"])
+    process_rig_file("scraper/01HistoricalDatabase/11NorthAmericaRigMensual.csv", region_filter_func=lambda df: df[df["Region"] == "North America"])
+    process_rig_file("scraper/01HistoricalDatabase/12WorldWideRigMensual.csv")
