@@ -34,7 +34,12 @@ def recalculate_first_row(hist_df):
 def dataframe_checksum(df):
     return hashlib.md5(pd.util.hash_pandas_object(df, index=True).values).hexdigest()
 
+import os
+
 def process_rig_file(hist_path, region_filter_func=None):
+    print("==============================")
+    print(f"🔍 Analyzing {os.path.basename(hist_path)}")
+    print("==============================")
     hist_df = pd.read_csv(hist_path, dtype=str)
     original_checksum = dataframe_checksum(hist_df)
 
