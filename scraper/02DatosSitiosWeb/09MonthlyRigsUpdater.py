@@ -3,7 +3,7 @@ import math
 import hashlib
 
 def recalculate_first_row(hist_df):
-    hist_df["Last"] = hist_df["Last"].astype(float)
+    hist_df["Last"] = hist_df["Last"].astype(float).round(0)
 
     if len(hist_df) > 1:
         hist_df.at[0, "Change"] = round(hist_df.at[0, "Last"] - hist_df.at[1, "Last"], 2)
@@ -64,7 +64,7 @@ def analyze_worldwide_rig_data():
         print("✅ No changes. Looking for next month...")
     else:
         print("⚠️ Rig Count has changed. Updating historical value...")
-        updated_hist_df.at[0, "Last"] = total_rig_count
+        updated_hist_df.at[0, "Last"] = float(round(total_rig_count, 0))
         updated_hist_df = recalculate_first_row(updated_hist_df)
 
     anio_int = int(anio)
@@ -74,12 +74,12 @@ def analyze_worldwide_rig_data():
         next_mes = "01"
     else:
         next_anio = anio
-        next_mes = str(mes_int + 1)
+        next_mes = str(mes_int + 1).zfill(2)
 
     next_filtered = new_df[(new_df["Year"] == next_anio) & (new_df["Month"] == next_mes)]
     if not next_filtered.empty:
         print("📈 New month data encountered. Adding to historical file...")
-        next_total = next_filtered["Rig Count Value"].sum()
+        next_total = float(round(next_filtered["Rig Count Value"].sum(), 0))
         new_row = pd.DataFrame([[next_anio, next_mes, next_total]], columns=["Anio", "Mes", "Last"])
         updated_hist_df = pd.concat([new_row, updated_hist_df], ignore_index=True)
         updated_hist_df = recalculate_first_row(updated_hist_df)
