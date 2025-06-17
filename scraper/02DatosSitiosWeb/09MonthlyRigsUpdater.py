@@ -74,7 +74,7 @@ def analyze_worldwide_rig_data():
         next_mes = "01"
     else:
         next_anio = anio
-        next_mes = str(mes_int + 1).zfill(2)
+        next_mes = str(mes_int + 1)
 
     next_filtered = new_df[(new_df["Year"] == next_anio) & (new_df["Month"] == next_mes)]
     if not next_filtered.empty:
