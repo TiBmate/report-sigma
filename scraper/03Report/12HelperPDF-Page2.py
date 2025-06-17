@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
 
 def crear_tabla_datos_semana(WTI, NaturalGas, GasolineGas, OilService, NaturalGasStorage, NorthAmericanRig, USPetroleum):
     # Lista de archivos y nombres asociados
