@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo -v
 # Load conda commands into the shell
 eval "$(conda shell.bash hook)"
 
@@ -18,7 +18,37 @@ conda activate report-sigma
 # Install dependencies
 echo "📦 Installing dependencies from requirements.txt..."
 pip install -r requirements.txt
-playwright install
+
+# Install system dependencies for Playwright
+echo "🛠️  Checking and installing Playwright system dependencies..."
+
+# Check if playwright is available in system PATH
+if command -v playwright &> /dev/null; then
+    echo "📍 Playwright found in PATH. Running 'playwright install-deps'..."
+    playwright install-deps
+else
+    # Try to locate it within the current Conda environment
+    PLAYWRIGHT_PATH=$(python -c "import shutil; print(shutil.which('playwright'))")
+    if [ -n "$PLAYWRIGHT_PATH" ]; then
+        echo "📍 Playwright found in Conda environment. Running with sudo..."
+        "$PLAYWRIGHT_PATH" install-deps
+    else
+        echo "❌ Playwright not found. Please make sure it's listed in requirements.txt"
+    fi
+fi
+
+
+# ───────────────────────────────────────────────
+# Check and install xvfb if needed
+echo "🖥️  Verifying xvfb is installed..."
+
+if command -v xvfb-run &> /dev/null; then
+    echo "✅ xvfb-run is already installed."
+else
+    echo "⚠️  xvfb-run not found. Installing with apt..."
+    apt-get update
+    apt-get install -y xvfb
+fi
 
 # Elimnar la carpeta csv
 echo -e "\n Eliminando carpeta CSV ..."
