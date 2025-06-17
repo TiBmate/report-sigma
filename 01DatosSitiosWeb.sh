@@ -56,8 +56,11 @@ python ./scraper/02DatosSitiosWeb/06USRigs.py
 echo -e "\n Ejecutando 07USCrudeOilInventory.py..."
 python ./scraper/02DatosSitiosWeb/07USCrudeOilInventory.py
 
-echo -e "\n Ejecutando 07USCrudeOilInventory.py..."
-python ./scraper/02DatosSitiosWeb/07USCrudeOilInventory.py
+echo -e "\n Ejecutando 08MonthlyRigsDownloader.py..."
+python ./scraper/02DatosSitiosWeb/08MonthlyRigsDownloader.py
+
+echo -e "\n Ejecutando 09MonthlyRigsUpdater.py..."
+python ./scraper/02DatosSitiosWeb/09MonthlyRigsUpdater.py
 
 echo -e "\n====== Integrando los datos de sitios web con datos historicos ======"
 
