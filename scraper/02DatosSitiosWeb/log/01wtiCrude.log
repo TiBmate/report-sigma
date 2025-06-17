@@ -101,3 +101,16 @@
 2025-03-28 11:57:46 - INFO - Creando archivo CSV
 2025-03-28 11:57:46 - INFO - Fin de ejecución del script
 2025-03-28 11:57:46 - INFO - ================================
+2025-06-17 06:25:38 - INFO - Iniciando la ejecución del script
+2025-06-17 06:25:38 - INFO - Creación de carpeta csv
+2025-06-17 06:25:38 - INFO - Estableciendo los selectores
+2025-06-17 06:25:38 - INFO - Enviando cabeceras al sitio web
+2025-06-17 06:25:38 - DEBUG - Using selector: EpollSelector
+2025-06-17 06:25:39 - INFO - Inicio de espera de carga de pagina web.
+2025-06-17 06:25:45 - INFO - Termino de espera de carga de pagina web.
+2025-06-17 06:25:48 - INFO - Fecha obtenida: 06/16/25
+2025-06-17 06:25:48 - INFO - Valor obtenido: 71.83
+2025-06-17 06:25:48 - INFO - Fin de ejecución del script
+2025-06-17 06:25:48 - INFO - Creando archivo CSV
+2025-06-17 06:25:48 - INFO - Fin de ejecución del script
+2025-06-17 06:25:48 - INFO - ================================

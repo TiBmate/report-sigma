@@ -101,3 +101,17 @@
 2025-03-28 12:09:49 - INFO - Creando archivo CSV
 2025-03-28 12:09:49 - INFO - Fin de ejecución del script
 2025-03-28 12:09:49 - INFO - ================================
+2025-06-17 06:26:14 - INFO - Estableciendo los selectores
+2025-06-17 06:26:14 - INFO - Enviando cabeceras al sitio web
+2025-06-17 06:26:14 - DEBUG - Using selector: EpollSelector
+2025-06-17 06:26:18 - INFO - Inicio de espera de carga de pagina web.
+2025-06-17 06:26:20 - INFO - Termino de espera de carga de pagina web.
+2025-06-17 06:26:20 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-17 06:26:21 - INFO - Inicio de extracción de elementos
+2025-06-17 06:26:21 - INFO - Obteniendo el texto de los elementos.
+2025-06-17 06:26:22 - INFO - Transformando datos a puntos flotantes
+2025-06-17 06:26:22 - INFO - Eliminando simbolos especiales
+2025-06-17 06:26:22 - INFO - Eliminando simbolos especiales
+2025-06-17 06:26:22 - INFO - Creando archivo CSV
+2025-06-17 06:26:22 - INFO - Fin de ejecución del script
+2025-06-17 06:26:22 - INFO - ================================

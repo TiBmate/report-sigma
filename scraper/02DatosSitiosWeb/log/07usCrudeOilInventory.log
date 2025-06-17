@@ -83,3 +83,16 @@ playwright._impl._errors.TargetClosedError: Target page, context or browser has 
 2025-03-28 12:10:23 - INFO - Creando archivo CSV
 2025-03-28 12:10:23 - INFO - Fin de ejecución del script
 2025-03-28 12:10:23 - INFO - ================================
+2025-06-17 06:26:30 - INFO - Estableciendo los selectores
+2025-06-17 06:26:30 - INFO - Enviando cabeceras al sitio web
+2025-06-17 06:26:30 - DEBUG - Using selector: EpollSelector
+2025-06-17 06:26:33 - INFO - Inicio de espera de carga de pagina web.
+2025-06-17 06:26:35 - INFO - Termino de espera de carga de pagina web.
+2025-06-17 06:26:35 - INFO - Iniciando la espera del primer selector, fecha
+2025-06-17 06:26:36 - INFO - Inicio de extracción de elementos
+2025-06-17 06:26:37 - INFO - Obteniendo el texto de los elementos.
+2025-06-17 06:26:38 - INFO - Transformando datos a puntos flotantes
+2025-06-17 06:26:38 - INFO - Eliminando simbolos especiales
+2025-06-17 06:26:38 - INFO - Creando archivo CSV
+2025-06-17 06:26:38 - INFO - Fin de ejecución del script
+2025-06-17 06:26:38 - INFO - ================================
