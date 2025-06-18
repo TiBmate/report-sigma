@@ -25,6 +25,7 @@ echo "🛠️  Checking and installing Playwright system dependencies..."
 # Check if playwright is available in system PATH
 if command -v playwright &> /dev/null; then
     echo "📍 Playwright found in PATH. Running 'playwright install-deps'..."
+    playwright install
     playwright install-deps
 else
     # Try to locate it within the current Conda environment
@@ -32,6 +33,7 @@ else
     if [ -n "$PLAYWRIGHT_PATH" ]; then
         echo "📍 Playwright found in Conda environment. Running with sudo..."
         "$PLAYWRIGHT_PATH" install-deps
+        playwright install
     else
         echo "❌ Playwright not found. Please make sure it's listed in requirements.txt"
     fi
