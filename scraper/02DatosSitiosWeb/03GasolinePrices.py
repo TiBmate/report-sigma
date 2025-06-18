@@ -33,8 +33,8 @@ web = "https://www.eia.gov/"
 url = "https://www.eia.gov/petroleum/gasdiesel/"
 
 logging.info("Estableciendo los selectores")
-selector_fecha = "body > div.l-body-wrapper.ap > div.l-outer-wrapper > div > div.l-row.l-two-col-right > div:nth-child(1) > div > div:nth-child(2) > table > thead > tr:nth-child(2) > th:nth-child(4)"
-selector_valor = "body > div.l-body-wrapper.ap > div.l-outer-wrapper > div > div.l-row.l-two-col-right > div:nth-child(1) > div > div:nth-child(2) > table > tbody > tr:nth-child(1) > td:nth-child(4)"
+selector_fecha = "body > div.l-body-wrapper.ap > div.l-outer-wrapper > div > div.l-row.l-two-col-right > div:nth-child(1) > div > div:nth-child(1) > table > thead > tr:nth-child(2) > th:nth-child(4)"
+selector_valor = "body > div.l-body-wrapper.ap > div.l-outer-wrapper > div > div.l-row.l-two-col-right > div:nth-child(1) > div > div:nth-child(1) > table > tbody > tr:nth-child(1) > td:nth-child(4)"
 
 # Crea de carpeta para almacenar el archivo CSV
 if not os.path.exists(pathCsv):
